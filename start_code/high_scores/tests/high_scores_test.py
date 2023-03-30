@@ -10,6 +10,11 @@ class HighScoresTest(unittest.TestCase):
     # Tests
 
     # Test latest score (the last thing in the list)
+    def test_can_get_latest_score(self):
+        scores = [2, 4, 10, 2, 5]
+        expected_value = 5
+        actual_value = latest(scores)
+        self.assertEqual(expected_value, actual_value)
 
     # Test personal best (the highest score in the list)
 
